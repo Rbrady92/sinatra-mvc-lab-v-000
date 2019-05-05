@@ -9,7 +9,7 @@ class PigLatinizer
     text.each do |word|
       if vowels.include?(word[0])
         pigged << word + 'way'
-      elsif exceptions.include?(word[1..2]
+      elsif exceptions.include?(word[1..2])
         pigged << word[3..word.length-1] + word[0..2] + 'ay'
       elsif vowels.include?(word[1])
         pigged << word[1..word.length - 1] + word[0] + 'ay'
