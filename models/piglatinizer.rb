@@ -18,7 +18,7 @@ class PigLatinizer
       end
     end
 
-    pigged.join(' ')
+    return pigged.join(' ')
   end
 
 end
